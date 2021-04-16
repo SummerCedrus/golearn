@@ -2,11 +2,11 @@ GoLearn
 =======
 
 <img src="http://talks.golang.org/2013/advconc/gopherhat.jpg" width=125><br>
-[![GoDoc](https://godoc.org/github.com/sjwhitworth/golearn?status.png)](https://godoc.org/github.com/sjwhitworth/golearn)
-[![Build Status](https://travis-ci.org/sjwhitworth/golearn.png?branch=master)](https://travis-ci.org/sjwhitworth/golearn)<br>
-[![Code Coverage](https://codecov.io/gh/sjwhitworth/golearn/branch/master/graph/badge.svg)](https://codecov.io/gh/sjwhitworth/golearn)
+[![GoDoc](https://godoc.org/github.com/SummerCedrus/golearn?status.png)](https://godoc.org/github.com/SummerCedrus/golearn)
+[![Build Status](https://travis-ci.org/SummerCedrus/golearn.png?branch=master)](https://travis-ci.org/SummerCedrus/golearn)<br>
+[![Code Coverage](https://codecov.io/gh/SummerCedrus/golearn/branch/master/graph/badge.svg)](https://codecov.io/gh/SummerCedrus/golearn)
 
-[![Support via Gittip](https://rawgithub.com/twolfson/gittip-badge/0.2.0/dist/gittip.png)](https://www.gittip.com/sjwhitworth/)
+[![Support via Gittip](https://rawgithub.com/twolfson/gittip-badge/0.2.0/dist/gittip.png)](https://www.gittip.com/SummerCedrus/)
 
 GoLearn is a 'batteries included' machine learning library for Go. **Simplicity**, paired with customisability, is the goal.
 We are in active development, and would love comments from users out in the wild. Drop us a line on Twitter.
@@ -16,7 +16,7 @@ twitter: [@golearn_ml](http://www.twitter.com/golearn_ml)
 Install
 =======
 
-See [here](https://github.com/sjwhitworth/golearn/wiki/Installation) for installation instructions.
+See [here](https://github.com/SummerCedrus/golearn/wiki/Installation) for installation instructions.
 
 Getting Started
 =======
@@ -31,9 +31,9 @@ package main
 import (
 	"fmt"
 
-	"github.com/sjwhitworth/golearn/base"
-	"github.com/sjwhitworth/golearn/evaluation"
-	"github.com/sjwhitworth/golearn/knn"
+	"github.com/SummerCedrus/golearn/base"
+	"github.com/SummerCedrus/golearn/evaluation"
+	"github.com/SummerCedrus/golearn/knn"
 )
 
 func main() {
@@ -83,22 +83,22 @@ Examples
 GoLearn comes with practical examples. Dive in and see what is going on.
 
 ```bash
-cd $GOPATH/src/github.com/sjwhitworth/golearn/examples/knnclassifier
+cd $GOPATH/src/github.com/SummerCedrus/golearn/examples/knnclassifier
 go run knnclassifier_iris.go
 ```
 ```bash
-cd $GOPATH/src/github.com/sjwhitworth/golearn/examples/instances
+cd $GOPATH/src/github.com/SummerCedrus/golearn/examples/instances
 go run instances.go
 ```
 ```bash
-cd $GOPATH/src/github.com/sjwhitworth/golearn/examples/trees
+cd $GOPATH/src/github.com/SummerCedrus/golearn/examples/trees
 go run trees.go
 ```
 
 Docs
 ====
 
- * [English](https://github.com/sjwhitworth/golearn/wiki)
+ * [English](https://github.com/SummerCedrus/golearn/wiki)
  * [中文文档(简体)](doc/zh_CN/Home.md)
  * [中文文档(繁体)](doc/zh_TW/Home.md)
 

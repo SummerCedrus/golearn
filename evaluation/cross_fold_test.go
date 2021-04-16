@@ -1,8 +1,8 @@
 package evaluation
 
 import (
-	"github.com/sjwhitworth/golearn/base"
-	"github.com/sjwhitworth/golearn/knn"
+	"github.com/SummerCedrus/golearn/base"
+	"github.com/SummerCedrus/golearn/knn"
 	. "github.com/smartystreets/goconvey/convey"
 	"testing"
 )
