@@ -152,13 +152,21 @@ func (Attr *CategoricalAttribute) Equals(other Attribute) bool {
 	}
 
 	// Check that this CategoricalAttribute has the same
-	// values as the other, in the same order
+	// values as the other, but not necessary in the same order
 	if len(attribute.values) != len(Attr.values) {
 		return false
 	}
 
-	for i, a := range Attr.values {
-		if a != attribute.values[i] {
+	for _, a := range Attr.GetValues() {
+		hasSameVal := false
+		for _, o := range attribute.GetValues(){
+			if a == o {
+				hasSameVal = true
+				break
+			}
+		}
+
+		if !hasSameVal{
 			return false
 		}
 	}
@@ -167,7 +175,7 @@ func (Attr *CategoricalAttribute) Equals(other Attribute) bool {
 }
 
 // Compatible checks that this CategoricalAttribute has the same
-// values as another, in the same order.
+// values as another, but not necessary in the same order.
 func (Attr *CategoricalAttribute) Compatible(other Attribute) bool {
 	attribute, ok := other.(*CategoricalAttribute)
 	if !ok {
@@ -175,13 +183,21 @@ func (Attr *CategoricalAttribute) Compatible(other Attribute) bool {
 	}
 
 	// Check that this CategoricalAttribute has the same
-	// values as the other, in the same order
+	// values as the other, but not necessary in the same order
 	if len(attribute.values) != len(Attr.values) {
 		return false
 	}
 
-	for i, a := range Attr.values {
-		if a != attribute.values[i] {
+	for _, a := range Attr.GetValues() {
+		hasSameVal := false
+		for _, o := range attribute.GetValues(){
+			if a == o {
+				hasSameVal = true
+				break
+			}
+		}
+
+		if !hasSameVal{
 			return false
 		}
 	}
